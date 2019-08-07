@@ -1,0 +1,37 @@
+$(document).ready(function() {
+						   
+            $(".various").fancybox({
+                    maxWidth	: 800,
+                    maxHeight	: 600,
+                    fitToView	: false,
+                    width	: '335',
+                    height	: '305',
+                    autoSize	: false,
+                    closeClick	: false,
+                    openEffect	: 'none',
+                    closeEffect	: 'none',
+                    scrolling   : 'no',
+                    //modal       : true,
+                    //closeBtn    : true,  
+                    'overlayOpacity': 0.9,
+                    keys : {
+                        close  : null
+                    },
+                    helpers : { 
+                        overlay : {
+                            closeClick: false,
+                            opacity: 0.8, // or the opacity you want 
+                            css: {
+                               // 'background': 'transparent',
+                               // 'background-color': '#fff'
+                                
+                                
+                            } // or your preferred hex color value
+                        }
+                    },
+                    beforeShow: function(){
+						
+                        //$(".fancybox-skin").css("background","none");
+                    }
+                    
+            });
